@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Janken {
+    public static void main(String[] args) {
+        var run = new java.util.Random();
+        var n = run.nextInt(3);
+
+        var in = new Scanner(System.in);
+        System.out.print("あなたの好きな手を出してください。0=グー、1=チョキ、２=パー==>");
+        var line = in.nextLine();
+        var a = Integer.parseInt(line);
+
+            if (n == a) {
+                System.out.println("あいこ");
+            } else if (n == 0 && a == 1 || n == 1 && a == 2 || n == 2 && a == 0) {
+                System.out.println("わたしの勝");
+            } else {
+                System.out.println("あなたの勝ち");
+            }
+            System.out.print("私が出したのは" + n);
+        }
+
+    }
