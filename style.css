@@ -1,0 +1,145 @@
+
+body {
+    background-color: #FFFAFA;
+        box-sizing: border-box;
+        height: 250px;
+          margin: 30px 0;
+          background: repeating-linear-gradient(-45deg, #ddd 0, #ddd 2px, #FFF 4px, #FFF 6px);
+}
+
+
+
+header {
+     font-family: "Protest Riot", cursive;
+     font-size:15px;
+    margin-top: 10px;
+    border-top: 1px solid #300;
+    border-bottom: 1px solid #300;
+    background-color: #FFDDFF;
+    z-index: 10;
+    position: st2icky;
+    top: 0;
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+header ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+header ul li {
+    display: inline-block;
+    text-align: center;
+    margin:10px 10px 10px 20px;
+    margin-bottom: 10px;
+    padding: 1px 0;
+}
+.information {
+    background-color: white;
+    padding: 2px;
+    margin: 20px;
+    font-size: 15px;
+}
+
+.information p {
+    font-size: 18px;
+}
+
+.information h1 {
+
+    font-size: 30px;
+    margin-left: 35px;
+    margin: 10px 10px 5px 0px;
+        padding: 10px;
+        border-bottom-style: double;
+        border-bottom-width: 3px;
+        border-left-style: solid;
+        border-left-width: 0.5em;
+
+        line-height: 100%;
+        font-weight: bold;
+}
+
+
+
+.myphoto {
+    margin-bottom:50px;
+}
+
+.myphoto img {
+    background-color: white;
+    float: left;
+
+   margin-right: 60px;
+   margin-left: 60px;
+   box-shadow: 0 0 10px rgba(0, 0, 0 , .3);
+
+}
+.information li {
+      font-size: 20px;
+      margin: 0 20px 20px 0px;
+}
+
+.boxmemo {
+    border-style: solid;
+    border-width: 1px;
+    background-color: #FFFAFA;
+    width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0 , .3);
+}
+
+.boxmemo h2 {
+    margin: 10px;
+}
+.boxmemo p {
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 10px;
+     border-bottom-width: 3px;
+     border-left-style:
+     border-left-width: 1px;
+}
+
+.boxmemo2 {
+        margin: 10px 10px 100px 100px;
+        border-style: solid;
+        border-width: 1px;
+        background-color: #FFFAFA;
+        width: 600px;
+        box-shadow: 0 0 10px rgba(0, 0, 0 , .3);
+
+}
+
+.DbH2 img {
+    width : 80vw ;
+    margin:80px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0 , .3);
+}
+
+.prophoto {
+    width : 80vw ;
+     display: flex;
+    margin:20px;
+    padding: 20px;
+}
+
+.prophoto img {
+     width : 40vw ;
+    margin:20px;
+}
+
+.jscrpt p {
+    font-size:20px;
+}
+.jscrpt img {
+    width : 80vw ;
+    margin:80px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0 , .3);
+}
+
