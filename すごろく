@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class Sugoroku {
+    public static void main(String[] args) {
+
+        //駒の位置
+        var pos = 0;
+        var dice = new Dice();
+
+        System.out.println("すごろくを開始します。");
+        //現状表示
+        for (var i = 0; i < 15; i++) {
+            if (i == pos) {
+                System.out.print("🔺");
+            } else {
+                System.out.print(" ＿ ");
+            }
+        }
+        System.out.println("GOAL!!!!");
+
+        var in = new Scanner(System.in);
+
+        //ゴールするまでサイコロを振る
+        while (pos < 14) {
+            //Enter入力
+            in.nextLine();
+            var eye = dice.roll();
+            pos += eye;
+            System.out.println("サイコロの目は:" + dice.getEye());
+            if (pos > 14) {
+                pos = 14;
+            }
+
+            for (var i = 0; i < 15; i++) {
+                if (i == pos) {
+                    System.out.print("🔺");
+                } else if (pos == 4) {
+                    System.out.println("4マスに止まりました");
+                    System.out.println("穴に落ちて,3マス戻る" + "orz");
+                    pos -= 3;
+                } else if (pos == 8) {
+
+                    System.out.println("8マスに止まりました");
+                    System.out.println("とりあえず最初から");
+                    pos = 0;
+
+                } else if (pos == 6) {
+                    System.out.println("６マスにとまりました");
+                    System.out.println("１マス進む");
+                    pos += 1;
+                } else if (pos == 13) {
+                    System.out.println("13マスに止まりました,5マス戻ろう");
+                    pos -= 5;
+                } else if (pos == 12) {
+                    System.out.println("12マスに止まりました");
+                    System.out.println("3マス戻ろうか");
+                    pos -= 3;
+                } else {
+                    System.out.print(" ＿ ");
+                }
+            }
+            System.out.println("GOAL!!!!");
+        }
+    }
+}
